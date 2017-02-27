@@ -11,10 +11,9 @@
     float:left;
 }
 .center{
-    width:20px;
-    height:256px;
-    background:url(images/bar.png);
-    margin-left:270px;
+    
+    /*background:url(images/bar.png);*/
+    margin-left:10px;
     position: absolute;
 }
 .right{
@@ -29,4 +28,13 @@
 }
 .right .RGB{
     border-bottom:1px solid #ccc;
+}
+#cursor{
+    display: none;
+}
+.info{
+    width:400px;
+    height:50px;
+    position:absolute;
+    margin-top:260px;
 }

@@ -4,27 +4,30 @@
 <meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
 <title>uiColor</title>
 <link rel="stylesheet" type="text/css" href="color.css">
-<script type="text/javascript" src="jquery-1.9.1.js"></script>
-<script type="text/javascript" src="color.js"></script>
+<script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script src="getcanvaspixelcolor.js" type="text/javascript"></script>
+<script type="text/javascript" src="uicolor.js"></script>
 </head>
 <body>
     <div class="main">
         <div class="left">
         
         </div>
-        <div class="center"></div>
+        <canvas id="canvas" class="center" width="20" height="256"></canvas>
         <div class="right">
             <div class="RGB">
-                <p><span>R</span><input type="text" value="0" ></p>
+                <p><span>R</span><input type="text" value="0"></p>
                 <p><span>G</span><input type="text" value="0"></p>
                 <p><span>B</span><input type="text" value="255"></p>
             </div>
-            <div class="HSH">
+            <div class="HSL">
                 <p><span>H</span><input type="text" value="0">%</p>
                 <p><span>S</span><input type="text" value="0">%</p>
-                <p><span>H</span><input type="text" value="0">%</p>
+                <p><span>L</span><input type="text" value="0">%</p>
             </div>
         </div>
+        <div id="cursor"></div>
+        <div class="info" id="currentColor">点击上面的canvas来查看效果</div>
     </div>
 
 </body>
